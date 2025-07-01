@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Search from "./Search";
-import InfoBox from "./assets/InfoBox";
+import InfoBox from "./InfoBox";
 
 export default function WeatherApp() {
   const [weatherInfo, setWeatherInfo] = useState({
@@ -18,7 +18,7 @@ export default function WeatherApp() {
   };
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ marginLeft: "600px"}}>
       <h2>Weather App by Hemant</h2>
       <Search update={update} />
       <InfoBox Info={weatherInfo} />
